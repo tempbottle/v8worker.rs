@@ -1,12 +1,7 @@
-
-pub struct Handler {
-}
-
-
+pub struct Handler {}
 
 impl Handler {
     pub fn new() -> Handler {
-        Handler{}
+        Handler {}
     }
-
 }
