@@ -18,11 +18,10 @@ pub fn new_handler() -> handler::Handler {
 #[test]
 fn test_wrapper() {
     let mut _h = new_handler();
-    _h.init();
     let _recv_cb = move |data: Bytes| Box::new(data);
     let mut worker = worker::Worker::new(_recv_cb);
     worker.load(
-        "code.js".to_string(),
+        &"code.js".to_string(),
         "V8Worker2.send(new ArrayBuffer(10))".to_string(),
     );
 }
