@@ -14,7 +14,7 @@ struct buf_s {
 typedef struct buf_s buf;
 
 const char* get_version();
-void worker_set_flags(int* argc, char** argv);
+void set_flags(int* argc, char** argv);
 
 void v8_init();
 worker* worker_new();

@@ -201,7 +201,7 @@ void Send(const FunctionCallbackInfo<Value>& args) {
 
 const char* get_version() { return V8::GetVersion(); }
 
-void worker_set_flags(int* argc, char** argv) {
+void set_flags(int* argc, char** argv) {
   V8::SetFlagsFromCommandLine(argc, argv, true);
 }
 
